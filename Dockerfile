@@ -4,5 +4,8 @@ WORKDIR /app
 
 COPY . /app/
 
+RUN pip install requests
+
+
 CMD ["python","index.py"]
 
