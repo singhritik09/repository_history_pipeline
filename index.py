@@ -1,11 +1,11 @@
 import requests
 import json
+import creds
 
 username="singhritik09"
-token = "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"
 
 gh_session=requests.Session()
-gh_session.auth=(username,token)
+gh_session.auth=(username,creds.token)
 
 URL="https://api.github.com/user/repos"
 repos=json.loads(gh_session.get(URL).text)
