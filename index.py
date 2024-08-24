@@ -45,7 +45,7 @@ def write_to_file(list1):
 
 def send_email(subject, text_file_path):
     sender = "singhritik2711@gmail.com"
-    receivers = ["ritiksingh.is20@bmsce.ac.in", "additionalrecipient@example.com"]
+    receivers = ["ritiksingh.is20@bmsce.ac.in", "divyamishra216june@gmail.com"]
     password = "yebmvzgchqqaeupe"  
     
     BODY_HTML = f"""
