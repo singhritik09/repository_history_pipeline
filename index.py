@@ -2,7 +2,7 @@ import requests
 import json
 
 username="singhritik09"
-token = "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"
+token = ""
 
 gh_session=requests.Session()
 gh_session.auth=(username,token)
