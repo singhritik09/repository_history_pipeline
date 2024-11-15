@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 username="singhritik09"
-token = creds.token
+token = creds.TOKEN
 
 gh_session=requests.Session()
 gh_session.auth=(username,token)
@@ -16,13 +16,13 @@ URL="https://api.github.com/user/repos"
 repos=json.loads(gh_session.get(URL).text)
 
 print(type(repos))
-# print(repos)
+print(repos)
 # print("Repositories:")
 # for i, repo in enumerate(repos):
 #     print(f"{i + 1}: {repo['name']}")
 
 # repo_index = int(input("Enter the number of the repository you want to get commits for: ")) - 1
-repo_index=24
+repo_index=1
 selected_repo = repos[repo_index]
 
 commits_url = f"https://api.github.com/repos/{username}/{selected_repo['name']}/commits"
